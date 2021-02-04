@@ -26,6 +26,7 @@ public class Empresa implements Serializable {
     @CNPJ
     @NotBlank(message = "CNPJ é obrigatório")
     @NotEmpty
+    @Column(unique = true)
     private String cnpj;
 
 

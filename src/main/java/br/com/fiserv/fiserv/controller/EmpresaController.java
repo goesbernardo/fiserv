@@ -1,5 +1,6 @@
 package br.com.fiserv.fiserv.controller;
 
+import br.com.fiserv.fiserv.configuration.EmpresaControllerDoc;
 import br.com.fiserv.fiserv.dto.EmpresaDTO;
 import br.com.fiserv.fiserv.model.Empresa;
 import br.com.fiserv.fiserv.service.EmpresaService;
@@ -12,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/fiserv")
-public class EmpresaController {
+public class EmpresaController implements EmpresaControllerDoc {
 
     @Autowired
     EmpresaService empresaService;
