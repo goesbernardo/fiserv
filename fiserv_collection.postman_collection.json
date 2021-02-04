@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "6f9e08cc-4990-412a-8717-5a988c411b07",
+		"name": "fiserv_collection",
+		"description": "collection requests projeto teste fiserv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/fiserv",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"bernardo\",\r\n    \"cnpj\": \"09482108000132\"\r\n   \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fiserv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fiserv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/fiserv",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"bernardo\",\r\n    \"cnpj\": \"09482108000132\"\r\n   \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fiserv",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fiserv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/fiserv/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"bernardo\",\r\n    \"cnpj\": \"09482108000132\"\r\n   \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fiserv/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fiserv",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/fiserv/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"bernardo\",\r\n    \"cnpj\": \"47849550000143\"\r\n   \r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/fiserv/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"fiserv",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
