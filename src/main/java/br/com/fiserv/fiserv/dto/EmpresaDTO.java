@@ -13,13 +13,13 @@ import javax.validation.constraints.NotEmpty;
 @NoArgsConstructor
 public class EmpresaDTO {
 
-    @Length(min = 5,max = 100, message = "o nome deve conter entre 5 a 100 caracteres")
-    @NotBlank(message = "nome é obrigatório")
-    @NotEmpty
-    private String nome;
+  @Length(min = 5, max = 100, message = "o nome deve conter entre 5 a 100 caracteres")
+  @NotBlank(message = "{nome.not.blank=}")
+  @NotEmpty
+  private String nome;
 
     @CNPJ
-    @NotBlank(message = "CNPJ é obrigatório")
+    @NotBlank@NotBlank(message = "{cnpj.not.blank=}")
     @NotEmpty
     private String cnpj;
 
